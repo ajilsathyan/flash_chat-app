@@ -141,7 +141,17 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
         ),
       ),
     );
+
+  }
+  @override
+  void dispose() {
+    if(mounted){
+      setState(() {
+        isLoading=false;
+      });
+    }
+    super.dispose();
   }
 }
 
-//'com.google.firebase:firebase-analytics:19.0.0'
+

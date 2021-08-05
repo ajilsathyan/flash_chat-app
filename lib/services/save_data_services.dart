@@ -10,6 +10,8 @@ class UserDataServices {
     fireStore.collection('message').add({
       'sender': user.email,
       'message': messages,
+      'posted_at':DateTime.now().microsecondsSinceEpoch,
+      'admin_uid':user.uid
     });
   }
 

@@ -24,6 +24,8 @@ dependencies:
   firebase_auth: ^1.1.4
   modal_progress_hud: ^0.1.3
   font_awesome_flutter: ^9.0.0
+  bubble: ^1.2.1
+  timeago: ^3.1.0
 
 
 dev_dependencies:
